@@ -1,0 +1,19 @@
+{
+  "name": "lab-8-express-routing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evan-401-advanced-javascript/lab-8-express-routing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evan-401-advanced-javascript/lab-8-express-routing/issues"
+  },
+  "homepage": "https://github.com/evan-401-advanced-javascript/lab-8-express-routing#readme"
+}
