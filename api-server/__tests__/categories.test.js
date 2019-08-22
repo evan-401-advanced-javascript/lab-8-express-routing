@@ -67,16 +67,13 @@ describe('category API', () => {
       price: 5,
       category: 'test'
     };
-    return mockRequest.put(`/api/v1/categories/5d5dcbcac94ee326ed0a9191`)
+    return mockRequest.post('/api/v1/categories')
       .send(obj)
-      .then(data => {
-        return mockRequest.get(`/api/v1/categories/${data.body._id}`)
-          .then(record => {
-            Object.keys(obj).forEach(key => {
-              expect(record.body[key]).toEqual(obj[key]);
-            });
-          });
-      });
+      .send({name: "cars"})
+      .then(response => {
+        expect(response.status).toEqual(200);
+        expect(response.text).toContain('cars');
+      })
   });
 });
 
